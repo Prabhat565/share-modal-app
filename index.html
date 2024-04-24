@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share-modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="circles circle1"></div>
+      <div class="circles circle2"></div>
+      <div class="card-wrapper">
+        <div class="img">
+          <img src="./images/images.jpeg" class="img-here" alt="obito-image" />
+        </div>
+
+        <div class="heading">
+          <h1>Prabhat Sharma</h1>
+          <h3>Frontend Developer</h3>
+        </div>
+
+        <div class="button-group">
+          <button class="buttons" onclick="openModal()">
+            <i class="fa-solid fa-share"></i> Share My Profile
+          </button>
+          <button class="buttons">Follow Me</button>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal: -->
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Share my Profile</h2>
+        <i onclick="closeModal()" class="fa-solid fa-square-xmark"></i>
+      </div>
+      <div class="line"></div>
+      <div class="modal-body">
+        <h3 class="modal-subheading">Share this via</h3>
+        <div class="modal-container">
+          <a href="https://twitter.com/" class="icons"
+            ><i
+              class="fa-brands fa-twitter"
+              style="color: #74c0fc; font-size: 25px"
+            ></i
+          ></a>
+          <a href="https://twitter.com/" class="icons"
+            ><i
+              class="fa-brands fa-facebook"
+              style="color: #74c0fc; font-size: 25px"
+            ></i
+          ></a>
+          <a href="https://twitter.com/" class="icons"
+            ><i
+              class="fa-brands fa-whatsapp"
+              style="color: #63e6be; font-size: 25px"
+            ></i
+          ></a>
+          <a href="https://twitter.com/" class="icons"
+            ><i
+              class="fa-brands fa-instagram"
+              style="color: #ec5151; font-size: 25px"
+            ></i
+          ></a>
+          <a href="https://twitter.com/" class="icons"
+            ><i
+              class="fa-brands fa-telegram"
+              style="color: #74c0fc; font-size: 25px"
+            ></i
+          ></a>
+        </div>
+      </div>
+      <div class="overlay" onclick="closeModal()"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
